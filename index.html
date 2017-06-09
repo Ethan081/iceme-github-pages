@@ -85,21 +85,19 @@
             <label for="InputNumber">Telephone :</label>
             <input type="number" class="form-control" id="InputNumber" placeholder="+33">
           </div>
-          <label for="choix">Choix du Format :</label>
-          <div class="btn-group">
-            <button type="button" class="btn btn-info">Format</button>
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
+          <!-- Debut Checkboxes Format-->
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Conrnet
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Pot
+              </label>
           
-            <ul class="dropdown-menu">
-              <li><a href="#">Cornet</a></li>
-              <li><a href="#">Pot</a></li>
-              <li role="separator" class="divider"></li>
-            </ul>
-          </div>
-          <!-- Debut Checkboxes -->
+            </div>
+          <!-- Fin Checkboxes Format -->
+
+          <!-- Debut Checkboxes Parfum -->
             <div class="btn-group" data-toggle="buttons">
               <label class="btn btn-primary active">
                 <input type="radio" name="options" id="option1" autocomplete="off" checked> Chocolat
@@ -111,7 +109,7 @@
                 <input type="radio" name="options" id="option3" autocomplete="off"> Fraise
               </label>
             </div>
-          <!-- Fin Checkboxes -->
+          <!-- Fin Checkboxes Parfum -->
         </form>
 <!-- Fin du Form -->
       </div>
