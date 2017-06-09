@@ -63,7 +63,7 @@
       <h1>DEGUSTEZ UNE GLACE</h1>
       
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Commander</button>
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Commander une Glace</button>
     </div>
 
 <!-- Modal -->
@@ -72,10 +72,48 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Commande de la Glace</h4>
       </div>
       <div class="modal-body">
-        ...
+      <!-- Bebut du Form -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nom :</label>
+            <input type="email" class="form-control" id="InputEmail1" placeholder="Ex: Robin">
+          </div>
+          <div class="form-group">
+            <label for="InputNumber">Telephone :</label>
+            <input type="number" class="form-control" id="InputNumber" placeholder="+33">
+          </div>
+          <label for="choix">Choix du Format :</label>
+          <div class="btn-group">
+            <button type="button" class="btn btn-info">Format</button>
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+          
+            <ul class="dropdown-menu">
+              <li><a href="#">Cornet</a></li>
+              <li><a href="#">Pot</a></li>
+              <li role="separator" class="divider"></li>
+            </ul>
+          </div>
+          <!-- Debut Checkboxes -->
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Chocolat
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Vanille
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Fraise
+              </label>
+            </div>
+          <!-- Fin Checkboxes -->
+        </form>
+<!-- Fin du Form -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
